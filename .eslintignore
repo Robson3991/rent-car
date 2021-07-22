@@ -1,0 +1,10 @@
+# dependencies
+**/node_modules/*
+
+# nextjs
+**/out/*
+**/.next/*
+
+.eslintrc.js
+
+tsconfig.json
