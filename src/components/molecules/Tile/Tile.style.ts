@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { OfferT } from 'types';
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   margin: 15px;
   box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.4);
   border-radius: 8px;
@@ -44,10 +46,11 @@ export const ImageWrapper = styled.div<Partial<OfferT>>`
 
 export const Footer = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
   border-top: 1px solid rgba(var(--color-black-rgb), 0.2);
+  flex-grow: 1;
 `;
 
 export const Description = styled.div`
