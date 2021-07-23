@@ -18,6 +18,16 @@ export const ImageWrapper = styled.div<Partial<OfferT>>`
   aspect-ratio: 2 / 1;
   overflow: hidden;
 
+  & > svg {
+    transition: opacity var(--transition);
+
+    ${({ availability }) =>
+      !availability &&
+      `
+        opacity: 0.5;
+    `};
+  }
+
   & > img {
     width: 100%;
     height: 100%;
