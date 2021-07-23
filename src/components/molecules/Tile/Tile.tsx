@@ -26,7 +26,11 @@ const Tile: React.FC<TileProps> = ({
     <Wrapper>
       <CloseButton onClick={() => handleDelete()} />
       <ImageWrapper availability={availability}>
-        {photo ? <img src={photo} /> : <Car width="100" height="80" />}
+        {photo ? (
+          <img src={photo} data-testid="tile-image" />
+        ) : (
+          <Car width="100" height="80" />
+        )}
       </ImageWrapper>
       <Footer>
         <Description>
